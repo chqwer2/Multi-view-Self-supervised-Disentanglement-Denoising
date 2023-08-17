@@ -21,7 +21,7 @@
 
 ## Updates
 - **July 14, 2022**: MeD is accepted by ICCV'23.
- 
+
 
 
 [//]: # (## Acknowledgements)
@@ -31,5 +31,11 @@
 ## Citation
 If you find our repository useful for your research, please consider citing our paper:
 ```bibtex
-TO be  realeased
+@InProceedings{MeD_ICCV23,
+    author    = {Chen, Hao and Qu, Chenyuan and Zhang, Yu and Chen, Chen and Jiao, Jianbo},
+    title     = {Multi-view Self-supervised Disentanglement for General Image Denoising},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+}
 ```
