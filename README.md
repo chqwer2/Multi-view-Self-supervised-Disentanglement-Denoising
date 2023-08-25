@@ -4,7 +4,8 @@
   <img src="https://chqwer2.github.io/assets/paper/2023/MeD/MeD.jpg" align="center" width="60%"> -->
 
   <p align="center">
-  <font size=5><strong>Panoptic Scene Graph Generation</strong></font>
+
+[//]: # (  <font size=5><strong>Panoptic Scene Graph Generation</strong></font>)
     <br>
       <a href="http://chqwer2.github.io/" target='_blank'>Hao Chen</a>,&nbsp;
       <a href="https://chenyuanqu.com/" target='_blank'>Chenyuan Qu</a>,&nbsp;
