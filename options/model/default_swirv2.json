@@ -1,0 +1,58 @@
+{
+  "gpu_ids": [0]
+  , "dist": false,
+
+  "netG": {
+    "net_type": "swin_v2"       // "swin_v2"  |  "swinir"  |  "drt"
+    , "upscale": 1
+    , "in_chans": 3
+    , "img_size": 48
+    , "window_size": 8
+    , "img_range": 1.0
+    , "depths": [6, 6]      //[12, 12]
+    , "embed_dim": 180
+    , "num_heads": [4, 4]  //[12, 12]   number of head,
+    , "mlp_ratio": 2
+    , "upsampler": ""              // "pixelshuffle" | "pixelshuffledirect" | "nearest+conv" | null
+    , "resi_connection": "1conv"        // "1conv" | "3conv"
+
+    , "init_type": "default"
+    , "init_bn_type": "uniform"      // "uniform" | "constant"
+    , "init_gain": 0.2
+
+  }
+
+  , "train": {
+    "epochs": 10000
+    , "G_lossfn_type": "charbonnier"      //  "l1" | "l2sum" | "l2" | "ssim" | "charbonnier" | "charbonnier_with_blur"
+    , "G_lossfn_weight": 1.0            // default
+    , "G_charbonnier_eps": 1e-9
+
+    , "E_decay": 0.999                  // Exponential Moving Average for netG: set 0 to disable; default setting 0.999
+
+    , "G_optimizer_type": "adam"   // "sgd" //     // adamw
+
+    , "G_optimizer_wd": 0 //1e-5               // weight decay, default 0
+    , "G_optimizer_clipgrad": null      // unused
+    , "G_optimizer_reuse": true         //
+
+    , "G_scheduler_type": "MultiStepLR" // "MultiStepLR" is enough
+
+    , "G_optimizer_lr":  2e-4      // learning rate  2e-4
+    , "maxstep": 300000               // for print
+     , "G_scheduler_milestones": [75000, 150000, 200000, 250000, 300000]
+
+    , "G_scheduler_gamma": 0.5
+
+    , "G_regularizer_orthstep": null    // unused
+    , "G_regularizer_clipstep": null    // unused
+
+    , "G_param_strict": true
+    , "E_param_strict": true
+
+    , "checkpoint_test": 1          // for testing
+    , "checkpoint_save": 1           // for saving model
+    , "checkpoint_print": 3         // for print
+
+  }
+ }

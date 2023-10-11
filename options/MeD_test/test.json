@@ -1,0 +1,49 @@
+{
+  "name": ""
+  , "train_type" : "n2c"        // "n2c" | "n2n" | "n2s" | "r2r" | "med"
+
+  , "residual" : false
+  , "resume" : false
+
+  , "task" : "denoising"          // "derain" | "denoising"
+  , "model" : "swinv2"
+  , "dataset_file" : "options/datasets.json"
+
+  , "path": {
+    "root": "results/denoising"        // "denoising" | "superresolution" | "dejpeg"
+    , "pretrained_netG": null      // path of pretrained model
+    , "pretrained_netE": null      // path of pretrained model
+  }
+
+  , "corruption": {
+      "rain"  : 0                  // probability of rain
+    , "noise" : 1.0                // probability of noise
+    , "text"  : 0
+    , "blur"  : 0
+  }
+
+  ,"pretrain":{
+    "home": "../train_log/med",
+    "all" : false,                 // load all the experiments in the home directory, instead of result
+
+    // List of Pretrain Model...
+    "results": [
+      [0, "med_swinv2_depth[6,6]_head[4,4]_lr0.0002_sigma[5,50]_res48_mixup0.0_adam_Multi_MeD_train"]
+//     ,[0 , "media_swinv2_layer2_sigma[5,50]_res48_fused0.05_noise_pool"]
+
+    ]
+  }
+
+
+    , "datasets": {
+
+        "test_types":     [
+                ["gaussian@15"], ["gaussian@25"], ["gaussian@50"], ["gaussian@75"],
+                ["poisson", "speckle@25"], ["gaussian@25", "speckle@25"],  ["gaussian@50", "speckle@25"]
+                          ]
+        , "test_datasets" : ["CBSD68","McM", "kodak" , "set5" ]
+        , "H_size": 48
+    }
+  }
+
+

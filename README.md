@@ -3,7 +3,7 @@
 <!-- <p align="center">
   <img src="https://chqwer2.github.io/assets/paper/2023/MeD/MeD.jpg" align="center" width="60%"> -->
 
-  <p align="center">
+<p align="center">
 
 [//]: # (  <font size=5><strong>Panoptic Scene Graph Generation</strong></font>)
     <br>
@@ -21,7 +21,18 @@
 ---
 
 ## Updates
-- **July 14, 2022**: MeD is accepted by ICCV'23.
+- **Opt 11, 2023**: Training and Test code release 🚧
+- **Sept 10, 2023**: MeD paper is available in [arxiv.com](https://arxiv.org/abs/2309.05049) 📖
+- **July 14, 2023**: MeD is accepted by ICCV'23 🎉
+
+## Train & Test
+
+Run the following scripts for train and test
+
+```
+bash scripts/train/MeD_multi.sh              
+bash scripts/test/test_from_path.sh
+```
 
 
 

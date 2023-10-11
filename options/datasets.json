@@ -1,0 +1,210 @@
+{
+  "DIV2K": {
+    "n_channels": 3,                // broadcast to "datasets", 1 for grayscale, 3 for color
+    "dataroot_H": "../data/denoising/DIV2K_train_HR",
+    "dataroot_L": null,
+    "dataroot_H_filename": ["", ""],        // sub_folder_name, file_prefix_name
+    "dataroot_L_filename": ["", ""]
+  },
+
+  "DIV2K_gray": {
+    "n_channels": 1,                // broadcast to "datasets", 1 for grayscale, 3 for color
+    "dataroot_H": "../data/denoising/DIV2K_train_HR",
+    "dataroot_L": null,
+    "dataroot_H_filename": ["", ""],        // sub_folder_name, file_prefix_name
+    "dataroot_L_filename": ["", ""]
+  },
+
+  "CBSD68": {
+    "n_channels": 3,                // broadcast to "datasets", 1 for grayscale, 3 for color
+    "dataroot_H": "../data/denoising/CBSD68-dataset/CBSD68/original_png",
+    "dataroot_L": null,
+    "dataroot_H_filename": ["", ""],        // sub_folder_name, file_prefix_name
+    "dataroot_L_filename": ["", ""]
+  },
+
+  "McM": {
+    "n_channels": 3,                // broadcast to "datasets", 1 for grayscale, 3 for color
+    "dataroot_H": "../data/denoising/McM",
+    "dataroot_L": null,
+    "dataroot_H_filename": ["", ""],        // sub_folder_name, file_prefix_name
+    "dataroot_L_filename": ["", ""]
+  },
+
+  "kodak": {
+    "n_channels": 3,                // broadcast to "datasets", 1 for grayscale, 3 for color
+    "dataroot_H": "../data/denoising/kodak",
+    "dataroot_L": null,
+    "dataroot_H_filename": ["", ""],        // sub_folder_name, file_prefix_name
+    "dataroot_L_filename": ["", ""]
+  },
+
+  "set12": {
+    "n_channels": 3,                // broadcast to "datasets", 1 for grayscale, 3 for color
+    "dataroot_H": "../data/denoising/testsets/set12",
+    "dataroot_L": null,
+    "dataroot_H_filename": ["", ""],        // sub_folder_name, file_prefix_name
+    "dataroot_L_filename": ["", ""]
+  },
+
+  "set5": {
+    "n_channels": 3,                // broadcast to "datasets", 1 for grayscale, 3 for color
+    "dataroot_H": "../data/denoising/testsets/set5",
+    "dataroot_L": null,
+    "dataroot_H_filename": ["", ""],        // sub_folder_name, file_prefix_name
+    "dataroot_L_filename": ["", ""]
+  },
+
+  "RainTrainL": {
+    "n_channels": 3,
+    "dataroot_H": "../data/derain/train/RainTrainL",
+    "dataroot_L": "../data/derain/train/RainTrainL",
+    "dataroot_H_filename": ["norain", "norain"],
+    "dataroot_L_filename": ["rain", "rain"]
+  },
+
+  "Rain12": {
+    "n_channels": 3,
+    "dataroot_H": "../data/derain/test/Rain12",
+    "dataroot_L": "../data/derain/test/Rain12",
+    "dataroot_H_filename": ["groundtruth", ""],
+    "dataroot_L_filename": ["rainy", ""]
+    },
+
+  
+    
+  // ------------ Real-Noise Data -------------
+  "PolyU":{
+    "n_channels": 3,                
+    "dataroot_H": "../data/denoising/PolyU/gt",
+    "dataroot_L": "../data/denoising/PolyU/noisy",
+    "dataroot_H_filename": ["", ""],        
+    "dataroot_L_filename": ["", ""],
+    "real_noise": true
+  },
+
+  "SIDD":{
+    "n_channels": 3,                
+    "dataroot_H": "../data/denoising/SIDD/gt",
+    "dataroot_L": "../data/denoising/SIDD/noisy",
+    "dataroot_H_filename": ["", ""],        
+    "dataroot_L_filename": ["", ""],
+    "real_noise": true
+  },
+
+  "SIDD_noisy":{
+    "n_channels": 3,
+    "dataroot_H": "../data/denoising/SIDD/noisy",
+    "dataroot_L": "../data/denoising/SIDD/noisy",
+    "dataroot_H_filename": ["", ""],
+    "dataroot_L_filename": ["", ""],
+    "real_noise": true
+  },
+
+  "SIDD_gt":{
+    "n_channels": 3,
+    "dataroot_H": "../data/denoising/SIDD/gt",
+    "dataroot_L": "../data/denoising/SIDD/gt",
+    "dataroot_H_filename": ["", ""],
+    "dataroot_L_filename": ["", ""],
+    "real_noise": true
+  },
+
+  "RIND":{
+    "n_channels": 3,                
+    "dataroot_H": "../data/denoising/real_image_noise_dataset/gt",
+    "dataroot_L": "../data/denoising/real_image_noise_dataset/noisy",
+    "dataroot_H_filename": ["", ""],        
+    "dataroot_L_filename": ["", ""],
+    "real_noise": true
+  },
+
+  "real":{
+    "n_channels": 3,                
+    "dataroot_H": "../data/denoising/testsets/real/gt",
+    "dataroot_L": "../data/denoising/testsets/real/noisy",
+    "dataroot_H_filename": ["", ""],        
+    "dataroot_L_filename": ["", ""],
+    "real_noise": true
+  },
+
+  "FLUO_MSC":{
+    "n_channels": 3,
+    "dataroot_H": "",
+    "dataroot_L": "../data/denoising/Fluo_C2DL_MSC",
+    "dataroot_H_filename": ["", ""],
+    "dataroot_L_filename": ["", ""],
+    "real_noise": true
+  },
+
+    "FLUO_N2DH":{
+        "n_channels": 3,
+        "dataroot_H": "",
+        "dataroot_L": "../data/denoising/Fluo-N2DH-GOWT1",
+        "dataroot_H_filename": ["", ""],
+        "dataroot_L_filename": ["", ""],
+        "real_noise": true
+    },
+
+  "Fluo-GOWT1": {
+    "n_channels": 3,
+    "dataroot_H": "",
+    "dataroot_L": "../data/denoising/Fluo-N2DH-GOWT1",
+    "dataroot_H_filename": ["", ""],
+    "dataroot_L_filename": ["", ""],
+    "real_noise": true
+  },
+
+  // ------------ Gray Data -------------
+
+  "Set11": {
+    "n_channels": 1,
+    "dataroot_H": "../data/denoising/testsets/Set11",
+    "dataroot_L": "../data/denoising/testsets/Set11",
+    "dataroot_H_filename": ["", ""],
+    "dataroot_L_filename": ["", ""],
+    "real_noise": true
+  },
+
+  "Set5_gray": {
+    "n_channels": 1,                // broadcast to "datasets", 1 for grayscale, 3 for color
+    "dataroot_H": "../data/denoising/testsets/set5",
+    "dataroot_L": null,
+    "dataroot_H_filename": ["", ""],        // sub_folder_name, file_prefix_name
+    "dataroot_L_filename": ["", ""]
+  },
+
+    // ------------ SR Data -------------
+
+    "set5_srf_2": {
+    "n_channels": 3,                // broadcast to "datasets", 1 for grayscale, 3 for color
+    "dataroot_H": "../data/denoising/testsets/Set5/image_SRF_2/HR",
+    "dataroot_L": "../data/denoising/testsets/Set5/image_SRF_2/LR",
+    "dataroot_H_filename": ["", ""],        // sub_folder_name, file_prefix_name
+    "dataroot_L_filename": ["", ""]
+  },
+
+
+     "set5_srf_3": {
+    "n_channels": 3,                // broadcast to "datasets", 1 for grayscale, 3 for color
+    "dataroot_H": "../data/denoising/testsets/Set5/image_SRF_3/HR",
+    "dataroot_L": "../data/denoising/testsets/Set5/image_SRF_3/LR",
+    "dataroot_H_filename": ["", ""],        // sub_folder_name, file_prefix_name
+    "dataroot_L_filename": ["", ""]
+  },
+
+    "set5_srf_4": {
+    "n_channels": 3,                // broadcast to "datasets", 1 for grayscale, 3 for color
+    "dataroot_H": "../data/denoising/testsets/Set5/image_SRF_4/HR",
+    "dataroot_L": "../data/denoising/testsets/Set5/image_SRF_4/LR",
+    "dataroot_H_filename": ["", ""],        // sub_folder_name, file_prefix_name
+    "dataroot_L_filename": ["", ""]
+  }
+
+
+
+
+}
+
+
+
