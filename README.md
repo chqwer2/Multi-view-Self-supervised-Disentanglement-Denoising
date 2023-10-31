@@ -20,9 +20,13 @@
 
 ---
 
+![arc](assets/arc.png)
+
 ## Updates
+
 - **Opt 11, 2023**: Training and Test code release 🚧
 - **Sept 10, 2023**: MeD paper is available in [arxiv.com](https://arxiv.org/abs/2309.05049) 📖
+- **Aug 17, 2023**: Don’t forget to visit our [website](https://chqwer2.github.io/MeD/) ~ 🤣
 - **July 14, 2023**: MeD is accepted by ICCV'23 🎉
 
 ## Train & Test
