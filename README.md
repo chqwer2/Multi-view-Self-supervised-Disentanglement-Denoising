@@ -46,7 +46,7 @@ bash scripts/test/test_from_path.sh
 
 #### Real Noise Removal Examples
 
- ![table](assets/real.png)
+![table](assets/real.png)
 
 [//]: # (## Acknowledgements)
 
