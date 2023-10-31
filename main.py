@@ -6,9 +6,6 @@ from models.select_network import define_network, define_multi_network
 from data.select_dataset import define_dataset
 from lib.utils_train import *
 from options.default_conditions import get_training_default
-import wandb
-wandb.login(key="ee52f649687b804de41f2c26b2049c7cd3e4db99")
-
 
 
 def main(opt, args, device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')):
